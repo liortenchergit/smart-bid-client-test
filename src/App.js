@@ -7,6 +7,8 @@ import { Switch, Route, Redirect } from "react-router-dom";
 //components
 import Main from './components/main';
 
+
+
 const App = () => {
   return (
     <div className="App">
