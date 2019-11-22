@@ -1,4 +1,5 @@
 @import "../node_modules/normalize.css/normalize.css";
+@import "./variables.scss";
 
 *,
 *:before,
@@ -41,9 +42,16 @@ a {
 .App {
   position: relative;
   .body {
-    margin-left: 250px;
+    margin-left: 0;
+    @media (min-width: $screen-extra-large) {
+      margin-left: 250px;
+    }
   }
   aside {
+    display: none;
+    @media (min-width: $screen-extra-large) {
+      display: block;
+    }
     width: 250px;
     top: 0;
     bottom: 0;

@@ -1,8 +1,14 @@
 @import "../../../variables.scss";
 .card {
-  flex: 0 0 calc(25% - 0.625rem);
+  flex: 0 0 calc(100% - 0.625rem);
+  @media (min-width: $screen-large) {
+    flex: 0 0 calc(50% - 0.625rem);
+  }
+  @media (min-width: $screen-extra-large) {
+    flex: 0 0 calc(25% - 0.625rem);
+  }
   background: #fff;
-  margin: 0 5px;
+  margin: 5px;
 
   color: gray;
   .cardHeader {
