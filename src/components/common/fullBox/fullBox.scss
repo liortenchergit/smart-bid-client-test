@@ -1,0 +1,60 @@
+@import "../../../variables.scss";
+.fullBox {
+  margin: 20px 5px;
+  background: #fff;
+  color: gray;
+  //
+  .boxHeader {
+    border-bottom: 1px solid lightgray;
+    padding: 0.625rem;
+    h2 {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+
+  .content {
+    display: flex;
+    padding: 0.625rem;
+    .graph {
+      flex: 0 0 calc(80% - 5px);
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .bars {
+      padding: 5px 5px 5px 8px;
+      flex: 0 0 calc(20% - 5px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .bar {
+        .barContent {
+          display: flex;
+          justify-content: space-between;
+        }
+        h2 {
+          font-size: 2rem;
+          font-weight: normal;
+          margin-bottom: 5px;
+        }
+        p {
+          font-size: 0.75rem;
+          margin-bottom: 4px;
+          &.prec {
+            color: $accept;
+          }
+        }
+      }
+
+      //   ul {
+      //     display: flex;
+      //     flex-wrap: wrap;
+      //     li {
+      //       flex: 0 0 100%;
+      //     }
+      //   }
+    }
+  }
+}

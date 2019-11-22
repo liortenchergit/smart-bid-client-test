@@ -1,0 +1,32 @@
+.dashboard {
+  padding: 1rem;
+  .cards {
+    width: 100%;
+    display: flex;
+  }
+  .bottomBoxes {
+    display: flex;
+    margin: 20px 5px;
+    .left {
+      flex: 0 0 30%;
+    }
+    .right {
+      flex: 0 0 70%;
+      display: flex;
+      flex-wrap: wrap;
+      .projectList {
+        flex: 0 0 50%;
+        padding: 0 10px 0 20px;
+      }
+      .todoList {
+        flex: 0 0 50%;
+        padding: 0 10px 0 20px;
+      }
+      .worldwide {
+        margin-top: 10px;
+        flex: 0 0 100%;
+        padding: 0 10px 0 20px;
+      }
+    }
+  }
+}

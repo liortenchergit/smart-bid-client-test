@@ -1,0 +1,70 @@
+@import "../../../variables.scss";
+.messages {
+  width: 100%;
+  background: #fff;
+  color: gray;
+  .messagesHeader {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 0.625rem;
+    h2 {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    // padding: 10px;
+    li {
+      cursor: pointer;
+      flex: 0 0 100%;
+      border-bottom: 1px solid $lightGray;
+      padding: 10px;
+    }
+    li.regular {
+      .header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        h2 {
+          font-size: 1.125rem;
+        }
+        span {
+          font-size: 0.75rem;
+          &.new {
+            color: $accept;
+          }
+        }
+      }
+      .content {
+        margin-bottom: 5px;
+        p {
+          font-size: 1rem;
+        }
+      }
+      .footer {
+        p {
+          font-size: 0.75rem;
+        }
+      }
+    }
+    li.main {
+      background: #f3f6fb;
+      .header {
+        margin-bottom: 20px;
+        p {
+          font-size: 2rem;
+          span {
+            margin-right: 8px;
+          }
+        }
+      }
+      p.details {
+        font-size: 0.75rem;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

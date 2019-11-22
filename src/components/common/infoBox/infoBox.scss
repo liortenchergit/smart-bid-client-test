@@ -1,0 +1,72 @@
+@import "../../../variables.scss";
+.card {
+  flex: 0 0 calc(25% - 0.625rem);
+  background: #fff;
+  margin: 0 5px;
+
+  color: gray;
+  .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 0.625rem;
+    h2 {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+    span {
+      border-radius: 4px;
+      padding: 4px;
+      font-size: 0.75rem;
+      &.regular {
+        background: $regular;
+      }
+      &.info {
+        background: $info;
+      }
+      &.warning {
+        background: $warning;
+      }
+      &.accept {
+        background: $accept;
+      }
+      p {
+        color: #fff;
+      }
+    }
+  }
+  .cardContent {
+    padding: 0.9375rem;
+    .header {
+      p {
+        font-size: 2.5rem;
+        font-weight: normal;
+      }
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 7px;
+      span {
+        .text {
+          font-size: 0.875rem;
+        }
+        &.regular {
+          color: $regular;
+        }
+        &.info {
+          color: $info;
+        }
+        &.warning {
+          color: $warning;
+        }
+        &.accept {
+          color: $accept;
+        }
+        span {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
